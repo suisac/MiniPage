@@ -47,19 +47,19 @@ const ItemForm=(props)=>{
                     </Form.Group>
                     <Form.Group className="mb-4" controlId="FormX">
                         <Form.Label>X</Form.Label>
-                        <Form.Control type="number" defaultValue={currBlock[1]}/>
+                        <Form.Control type="number" min="0" defaultValue={currBlock[1]}/>
                     </Form.Group>
                     <Form.Group className="mb-4" controlId="FormY">
                         <Form.Label>Y</Form.Label>
-                        <Form.Control type="number" defaultValue={currBlock[2]}/>
+                        <Form.Control type="number" min="0" defaultValue={currBlock[2]}/>
                     </Form.Group>
                     <Form.Group className="mb-4" controlId="FormSize">
                         <Form.Label>Font Size</Form.Label>
-                        <Form.Control type="number" defaultValue={currBlock[3] || 16}/>
+                        <Form.Control type="number" min="10" max="50" defaultValue={currBlock[3] || 16}/>
                     </Form.Group>
                     <Form.Group className="mb-4" controlId="FormWeight">
                         <Form.Label>Font Weight</Form.Label>
-                        <Form.Control type="number" defaultValue={currBlock[4] || 400}/>
+                        <Form.Control type="number" min="400" defaultValue={currBlock[4] || 400}/>
                     </Form.Group>
                     <Button className="my-4" type="submit" onClick={()=>setShow(false)}>Save Changes</Button>
                 </Form>
