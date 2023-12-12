@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import SideBar from './components/SideBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Provider } from 'react-redux';
+import appStore from './store/appStore';
+
 
 function App() {
   return (
+    <Provider store={appStore}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home/>
+      <SideBar/>
     </div>
+    </Provider>
   );
 }
 

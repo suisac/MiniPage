@@ -1,38 +1,93 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Open Sans';
 }
 
-.App-link {
-  color: #61dafb;
+.home{
+  background-color: white;
+  color: black;
+  height:100vh;
+  width:80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sideBar{
+  background-color: black;
+  color:white;
+  height:100vh;
+  width:20%;
 }
+
+.heading{
+  margin-left:10%;
+  font-weight:600;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+
+.menuItem{
+  width:80%;
+  height:49px;
+  margin-right:10%;
+  margin-left:10%;
+  margin-bottom:11px;
+  background-color: white;
+  color:black;
+  font-size: 16px;
+  padding-top:12px;
+  padding-left: 10px ;
+}
+
+.grabbable {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.grabbable:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.blockCSS{
+  min-height: 28px;
+  width:fit-content;
+  height:fit-content;
+  padding:1px;
+  background-color: white;
+  max-width: 150px;
+  word-wrap:break-word;
+}
+
+.blockButton{
+  width:fit-content;
+  height:fit-content;
+  padding:12px;
+  background-color: #0044C1;
+  color:white;
+  max-width:120px;
+  word-wrap:break-word;
+}
+
+.blockInput{
+  min-width: 200px;
+  max-width: 300px;
+  min-height: 28px;
+  padding:1px;
+  width:fit-content;
+  height:fit-content;
+  word-wrap:break-word;
+  border: 1px solid lightgrey;
+}
+
+.blockOnClick:hover{
+  cursor:pointer;
+}
+
+.active:focus{
+  border: 1px solid red;
+}
+
+
+
